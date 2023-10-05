@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-3 w-32 bg-yellow-500 text-center opacity-100 rounded-md text-white font-semibold text-sm hover:opacity-90 transition-opacity duration-300 ease-in-out border border-amber-400;
+
+    &.disabled {
+      @apply bg-transparent text-black cursor-not-allowed opacity-50 border-yellow-500;
+    }
+  }
+
+  .input {
+    @apply py-2 px-4 w-32 rounded-md text-xl border border-yellow-500 outline-none;
+  }
+}
